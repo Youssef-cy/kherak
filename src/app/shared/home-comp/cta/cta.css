@@ -56,3 +56,39 @@
   }
   .btn-outline-white:hover { border-color: #fff; transform: translateY(-2px); }
  
+
+  @media (max-width: 768px) {
+
+  .cta-section {
+    margin: 0 20px 60px;
+    padding: 40px 24px;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .cta-left {
+    max-width: 100%;
+  }
+
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .cta-sub {
+    font-size: 14px;
+  }
+
+  .cta-right {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .btn-white,
+  .btn-outline-white {
+    width: 100%;
+    justify-content: center;
+  }
+
+}

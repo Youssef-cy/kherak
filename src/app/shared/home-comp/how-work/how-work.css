@@ -38,3 +38,41 @@
   .step-title { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 10px; }
   .step-desc { font-size: 14px; color: grey; line-height: 1.65; }
  
+  @media (max-width: 768px) {
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  .section-header {
+    text-align: center;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .step-card {
+    padding: 28px;
+    text-align: center;
+  }
+
+  .step-num {
+    font-size: 48px;
+    top: 12px;
+    right: 16px;
+  }
+
+  .step-emoji {
+    font-size: 34px;
+  }
+
+  .step-title {
+    font-size: 18px;
+  }
+
+  .step-desc {
+    font-size: 13px;
+  }
+}

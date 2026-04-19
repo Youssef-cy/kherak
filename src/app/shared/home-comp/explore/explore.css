@@ -24,3 +24,40 @@
     font-size: 12px;
   }
  
+
+  @media (max-width: 768px) {
+
+  .cat-showcase {
+    padding: 0 20px 60px;
+  }
+
+  .cat-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 24px;
+  }
+
+  .cat-card {
+    padding: 20px;
+  }
+
+  .cat-card-emoji {
+    font-size: 40px;
+  }
+
+  .cat-card-name {
+    font-size: 14px;
+  }
+
+  .cat-card-count {
+    font-size: 11px;
+  }
+
+  .cat-arrow {
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    right: 12px;
+    font-size: 10px;
+  }
+}
