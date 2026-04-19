@@ -1,0 +1,40 @@
+/* HOW IT WORKS */
+  .section { padding: 80px 60px; }
+  .section-header { margin-bottom: 52px; }
+  .section-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 11px; font-weight: 600; color: orange;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .section-tag::before { content: ''; width: 20px; height: 2px; background: orange; }
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 800; line-height: 1.1;
+    letter-spacing: -0.025em;
+  }
+  .section-title .muted { color: #C8C4BE; }
+ 
+  .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .step-card {
+    background: #FFFFFF; border-radius: 24px; padding: 36px;
+    position: relative; overflow: hidden;
+    border: 1px solid gray;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .step-card:hover { transform: translateY(-6px); box-shadow: grey; }
+  .step-card:nth-child(2) { background: black; }
+  .step-card:nth-child(2) .step-title { color: #fff; }
+  .step-card:nth-child(2) .step-desc { color: rgba(255,255,255,0.5); }
+  .step-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 72px; font-weight: 800; color: grey;
+    line-height: 1; position: absolute; top: 16px; right: 24px;
+    letter-spacing: -0.04em;
+  }
+  .step-card:nth-child(2) .step-num { color: rgba(255,255,255,0.07); }
+  .step-emoji { font-size: 40px; margin-bottom: 20px; }
+  .step-title { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+  .step-desc { font-size: 14px; color: grey; line-height: 1.65; }
+ 

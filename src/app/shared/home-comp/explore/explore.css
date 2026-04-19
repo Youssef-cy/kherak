@@ -1,0 +1,26 @@
+
+  /* CATEGORIES SHOWCASE */
+  .cat-showcase { padding: 0 60px 80px; }
+  .cat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; }
+  .cat-card {
+    border-radius: 20px; padding: 28px 24px;
+    display: flex; flex-direction: column; gap: 12px;
+    cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+    position: relative; overflow: hidden;
+  }
+  .cat-card:hover { transform: translateY(-4px); box-shadow: grey; }
+  .cat-card.c1 { background: #FFF3EE; }
+  .cat-card.c2 { background: #F0F7FF; }
+  .cat-card.c3 { background: #F0FDF4; }
+  .cat-card.c4 { background: #FFF8E7; }
+  .cat-card-emoji { font-size: 48px; }
+  .cat-card-name { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; }
+  .cat-card-count { font-size: 12px; color: grey; }
+  .cat-arrow {
+    position: absolute; top: 20px; right: 20px;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: rgba(0,0,0,0.08);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+  }
+ 

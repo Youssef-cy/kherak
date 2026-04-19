@@ -1,0 +1,41 @@
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(249,247,244,0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .nav-logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800; font-size: 22px;
+    color: black;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .nav-logo span { color: orange; }
+  .nav-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: orange;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%,100% { transform: scale(1); opacity:1; }
+    50% { transform: scale(1.4); opacity:0.7; }
+  }
+  .nav-links {
+    display: flex; align-items: center; gap: 36px; list-style: none;
+  }
+  .nav-links a {
+    font-size: 14px; font-weight: 500; color: grey;
+    text-decoration: none; transition: color 0.2s;
+    letter-spacing: 0.01em;
+  }
+  .nav-links a:hover { color: black; }
+  .nav-cta {
+    background: black; color: #fff !important;
+    padding: 10px 22px; border-radius: 50px;
+    font-weight: 500 !important;
+    transition: background 0.2s, transform 0.2s !important;
+  }
+  .nav-cta:hover { background: orange !important; transform: translateY(-1px); }
+ 
