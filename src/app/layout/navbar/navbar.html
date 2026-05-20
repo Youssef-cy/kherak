@@ -1,0 +1,24 @@
+<nav>
+  <div class="nav-logo">
+    Khairak 
+    <div class="nav-dot"></div>
+  </div>
+
+  <ul class="nav-links" [class.active]="isOpen">
+   
+    @if (currentRoute != '/') {
+    <li><a routerLink="">home</a></li>
+
+    }
+@if (currentRoute != '/Restaurants') {
+    <li><a routerLink="Restaurants">Restaurants</a></li>
+
+    }
+    <li><a href="#">Groceries</a></li>
+    <li><a href="#">Offers</a></li>
+    <li><a href="#">About</a></li>
+    <li><a routerLink="login" class="nav-cta">Log in</a></li>
+  </ul>
+
+  <div class="menu-toggle" (click)="isOpen = !isOpen">☰</div>
+</nav>
