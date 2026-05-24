@@ -1,0 +1,31 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Cheese Burger",
+      "category": "Burger",
+      "price": 120,
+      "image": "assets/images/burger1.png",
+      "description": "Juicy beef burger with cheddar cheese and fresh vegetables.",
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Pepperoni Pizza",
+      "category": "Pizza",
+      "price": 180,
+      "image": "assets/images/pizza1.png",
+      "description": "Classic pepperoni pizza with mozzarella cheese.",
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "Chicken Shawarma",
+      "category": "Sandwich",
+      "price": 90,
+      "image": "assets/images/shawarma1.png",
+      "description": "Grilled chicken shawarma with garlic sauce.",
+      "available": false
+    }
+  ]
+}

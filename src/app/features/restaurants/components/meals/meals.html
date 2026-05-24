@@ -1,10 +1,37 @@
 <div class="section">
-    
-    <div class="section-header">
-        <h2 class="section-title">Find your <span class="muted">delicious Meal</span></h2>
+
+  <div class="section-header">
+    <h2 class="section-title">Find your <span class="muted">delicious
+        Meal</span></h2>
+  </div>
+
+  <app-category></app-category>
+  <div class="cards"> @for (item of items; track item.id) {
+    <div class="card">
+      <div class="card__shine"></div>
+      <div class="card__glow"></div>
+      <div class="card__content">
+        <div class="card__badge">@if (item.available == true) {<h3 class="status sold">available</h3> }
+          @else {
+         <h3 class="status-sold">sold</h3>
+          }
+        </div>
+        <div style="--bg-color: #a78bfa" class="card__image">
+          <img [src]="item.image" alt>
+        </div>
+        <div class="card__text">
+          <p class="card__title">{{item.name}}</p>
+          <p class="card__description">{{item.description}}</p>
+        </div>
+        <div class="card__footer">
+          <div class="card__price">${{item.price}}</div>
+          <div class="card__button">
+            <h1>buy now </h1>
+          </div>
+        </div>
+      </div>
     </div>
 
-<app-category></app-category>
-
+    }
+  </div>
 </div>
-
